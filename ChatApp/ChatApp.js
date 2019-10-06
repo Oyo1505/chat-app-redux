@@ -1,4 +1,6 @@
 import React from 'react';
+import {connect} from 'react-redux';
+import AsideUsers from './aside-users';
 
  class ChatApp extends React.Component {
 
@@ -8,7 +10,11 @@ import React from 'react';
 
 	render() {
 		return (
-			<div>ChatApp</div>
+			<div id="chat-app" data-test='ChatAppComponent'>
+				
+				<AsideUsers />
+
+			</div>
 		);
 	}
 }
